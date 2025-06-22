@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/autumn-background.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/img/autumn-background.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -33,10 +33,26 @@
 }
 
 .formulario-input {
+    display: block;
+    color: white;
     width: 280px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.formulario-input::placeholder {
+    color: rgb(172, 192, 172);
 }
 
 .formulario-btn {
-    font-size: 1.5em;
-    background-color: burlywood;
+    font-size: 2.5em;
+}
+
+.formulario-btn:hover {
+    text-decoration: underline;
+}
+
+.formulario-btnReset {
+    color: rgb(172, 192, 172);
 }
