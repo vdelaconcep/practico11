@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Niconne';
+    src: url(./assets/fonts/Niconne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+
+.formulario-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/autumn-background.jpg') no-repeat;
+    background-size: cover;
+}
+
+.cursiva {
+    font-family: 'Niconne';
+    
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.formulario-titulo {
+    font-size: 3.5em;
+    text-shadow: 2px 2px black;
+}
+
+.formulario-input {
+    width: 280px;
+}
+
+.formulario-btn {
+    font-size: 1.5em;
+    background-color: burlywood;
+}
