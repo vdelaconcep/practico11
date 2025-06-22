@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <>
-      <div className='formulario-div bg-info text-white'>
+      <div className='formulario-div text-white'>
         <h2 className='cursiva formulario-titulo fw-bold text-center p-2'>Práctico n°11 - Nombre y edad</h2>
         <form onSubmit={gestionEnvio}>
           <input className='montserrat formulario-input text-center text-white mt-3'
@@ -51,9 +51,14 @@ const App = () => {
           </div>
         </form>
       </div>
-      <div className='overlay'>
-        {mensaje && <Mensaje persona={persona} />}
-      </div>
+      
+      {mensaje &&
+        <div className='overlay' onClick={() => {setMensaje(false)}}>
+          <div className='mensaje-div cursiva'>
+            <Mensaje persona={persona} />
+          </div>
+        </div>
+      }
     </>); 
 };
 
